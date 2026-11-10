@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#101e25"><title>世界之外，第零天</title><link rel="stylesheet" href="style.css"><script defer src="game.js"></script></head>
+<body>
+<header><a class="wordmark" href="index.html">世界之外<span>THE WORLD BEYOND</span></a><div class="chapter">序章 <i></i> 第零天</div><button id="reset" class="quiet">重新醒来 ↺</button></header>
+<main>
+<section class="scene-heading"><div><p class="eyebrow">00 / THE FORGOTTEN PLATFORM</p><h1>无人的候车站</h1><p id="atmosphere">海没有声音。时钟没有明天。</p></div><div class="coordinates">北纬 — — °<br><span>时间停在 00:00</span></div></section>
+<section id="explore-scene" class="scene" tabindex="-1" aria-label="可探索的候车站，点击场景中的标记">
+<svg viewBox="0 0 1200 590" preserveAspectRatio="xMidYMid slice" role="img" aria-label="青绿色雾海中的老旧候车站，一扇发光的门悬立在远方，陌生人守在站台边缘">
+<defs>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#142b34"/><stop offset="1" stop-color="#68847e"/></linearGradient>
+<linearGradient id="sea" x2="0" y2="1"><stop stop-color="#526f6e"/><stop offset="1" stop-color="#172b32"/></linearGradient>
+<linearGradient id="ground" x2="0" y2="1"><stop stop-color="#34484a"/><stop offset="1" stop-color="#101d25"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#d4e9c2" stop-opacity=".35"/><stop offset="1" stop-color="#e1e9c8" stop-opacity="0"/></radialGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="15"/></filter>
+<pattern id="rain" width="83" height="93" patternUnits="userSpaceOnUse"><path d="M13 5l-2 12 M60 57l-2 9" stroke="#d4ded4" stroke-opacity=".09"/></pattern>
+</defs>
+<rect width="1200" height="590" fill="url(#sky)"/>
+<circle cx="856" cy="114" r="155" fill="url(#glow)"/><circle cx="856" cy="114" r="40" fill="#c5d3b8" opacity=".73"/><circle cx="873" cy="103" r="39" fill="#405e60"/>
+<path d="M0 270L100 243 158 251 252 221 340 252 417 239 510 263 620 241 735 261 834 227 935 247 1053 220 1200 248V370H0Z" fill="#263e44" opacity=".5"/>
+<rect y="293" width="1200" height="297" fill="url(#sea)"/>
+<g stroke="#a7c0b1" opacity=".19" fill="none"><path d="M10 318h246m64 12h196m53-21h204m172 18h226M40 364h320m187-17h278m96 25h210M4 413h260m635-9h244M710 448h286"/></g>
+<g id="door-art"><ellipse cx="930" cy="350" rx="110" ry="90" fill="url(#glow)"/><path d="M910 330v-91h43v91" fill="#b7cfb5" opacity=".8" stroke="#d5e3c2" stroke-width="3"/><path d="M917 330v-84h28v84" fill="#3c5859"/><path d="M911 341h42l18 93h-76Z" fill="#c4dec0" opacity=".08"/></g>
+<g fill="#a8c0b5" opacity=".13" filter="url(#blur)"><ellipse cx="355" cy="283" rx="400" ry="18"/><ellipse cx="1001" cy="368" rx="290" ry="16"/></g>
+<path d="M0 392L687 355 1200 590H0Z" fill="url(#ground)"/><path d="M0 392L687 355 1200 590" fill="none" stroke="#83958a" stroke-width="4" opacity=".6"/><path d="M0 414L682 373 1140 590" fill="none" stroke="#9eaa91" stroke-width="2" stroke-dasharray="13 12" opacity=".27"/>
+<g stroke="#778782" opacity=".15"><path d="M295 380L225 590M505 367l140 223M686 355L1090 590M0 469l852-39M0 550l1025-40"/></g>
+<g id="station"><path d="M60 134L545 124 651 169 8 188Z" fill="#172a2e" stroke="#556e6b" stroke-width="2"/><path d="M8 188l643-19v15L8 205Z" fill="#0d2027"/><path d="M79 198v218h15V197M534 185v191h13V185" fill="#15282e" stroke="#526b68" stroke-width="2"/><path d="M94 212l59-18M534 209l-58-21" stroke="#59716c" stroke-width="4"/>
+<path d="M167 205h181v60H167z" fill="#253b3d" stroke="#758b7f"/><text x="257" y="243" fill="#adbaaa" text-anchor="middle" font-size="20" letter-spacing="10" font-family="serif">未名站</text>
+<circle cx="423" cy="225" r="32" fill="#182d32" stroke="#839486" stroke-width="3"/><circle cx="423" cy="225" r="26" fill="#aeb7a0" opacity=".75"/><path d="M423 204v21l-14 1" stroke="#293c3b" stroke-width="3"/><circle cx="423" cy="225" r="3" fill="#293c3b"/>
+<path d="M171 339h192v23H171zM178 309h178v24H178z" fill="#4e5d55" stroke="#7c8676"/><path d="M186 361v35m161-35v24" stroke="#13272c" stroke-width="9"/><path d="M228 341l26-4 9 10-29 4Z" fill="#c0b99a"/>
+</g>
+<g id="lamp-art"><path d="M625 335V156q0-21 20-21h21" stroke="#172a30" stroke-width="7" fill="none"/><path d="M651 140h32l-5 29h-22Z" fill="#c4b77f" stroke="#263a3a" stroke-width="4"/><ellipse class="lamplight" cx="667" cy="182" rx="95" ry="110" fill="url(#glow)"/><path class="lamplight" d="M658 164L567 351h199l-91-187Z" fill="#d8d8a0" opacity=".06"/></g>
+<g id="stranger-art" fill="#10252b"><ellipse cx="751" cy="416" rx="42" ry="8" opacity=".5"/><path d="M738 344q12-13 25 0l11 57h-47Z"/><ellipse cx="751" cy="329" rx="12" ry="16"/><path d="M735 322q17-17 33 1Z"/><path d="M739 397l-2 22m23-22 6 20" stroke="#10252b" stroke-width="8"/><path d="M743 346l17 0-7 23Z" fill="#738b7c" opacity=".55"/></g>
+<g id="tide-art" opacity="0"><path d="M0 476Q250 448 520 477T1200 472V590H0Z" fill="#6c9993" opacity=".24"/><path d="M0 476Q250 448 520 477T1200 472" stroke="#b0d2c3" fill="none" opacity=".5"/></g>
+<rect width="1200" height="590" fill="url(#rain)"/>
+</svg>
+<div class="scene-vignette"></div><span class="scene-caption">遗失之海 · 旧站台</span><span id="scene-status" class="scene-status">◌ 雾尚未散去</span>
+<button class="hotspot clock" data-object="clock"><span class="marker">＋</span><span>停摆的钟</span></button>
+<button class="hotspot ticket" data-object="ticket"><span class="marker">＋</span><span>长椅上的纸片</span></button>
+<button class="hotspot lamp" data-object="lamp"><span class="marker">＋</span><span>最后一盏灯</span></button>
+<button class="hotspot stranger" data-object="stranger"><span class="marker">＋</span><span>候车的人</span></button>
+<button class="hotspot door" data-object="door"><span class="marker">＋</span><span>海上的门</span></button>
+<div class="scene-hint">点击微光，靠近那些尚未消失的事物。</div>
+</section>
+<section class="bottom-grid">
+<article id="narrative" class="narrative" aria-labelledby="dialogue-title"><p class="eyebrow" id="speaker">醒来的片刻</p><h2 id="dialogue-title" tabindex="-1">你来得比昨天更早。</h2><div id="dialogue-text" aria-live="polite"><p>你在一张潮湿的长椅上醒来。口袋是空的，鞋底却沾着星光。</p><p>远处有人站着。似乎已经等了很久。</p></div><div id="choices" class="choices"></div><p id="consequence" class="consequence" role="status"></p><button id="back-to-scene" class="quiet mobile-back" type="button">↑ 返回场景，继续探索</button></article>
+<aside class="notebook"><div class="notebook-heading"><h2>随身手记</h2><span id="note-count">00</span></div><p class="notebook-sub">有些事，只有你还记得。</p><ul id="notes"><li class="empty-note">触碰这个世界，留下第一道痕迹。</li></ul><div class="inventory"><span>随身之物</span><p id="inventory">空空如也</p></div></aside>
+</section>
+<footer><span><i class="save-dot"></i><span id="save-status">进度自动保存在此浏览器</span></span><span>WORLD BEYOND <b> / </b> DAY 00</span></footer>
+</main>
+<dialog id="reset-dialog"><p class="eyebrow">再一次，第零天</p><h2>要让这里忘记你吗？</h2><p>本次探索、选择与手记将被清除。你会在长椅上重新醒来。</p><div class="choices"><button id="cancel-reset">留在这里</button><button id="confirm-reset">清除进度，重新醒来</button></div></dialog>
+</body></html>
